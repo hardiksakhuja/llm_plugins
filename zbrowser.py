@@ -102,8 +102,8 @@ multi_tool_agent = LLMSingleActionAgent(
 # ]
 multi_tool_memory = ConversationBufferWindowMemory(k=2)
 multi_tool_executor = AgentExecutor.from_agent_and_tools(agent=multi_tool_agent, tools=expanded_tools, verbose=True, memory=multi_tool_memory)
-# multi_tool_executor.run("What are Zscaler employee benefits 2023 US")
-multi_tool_executor.run("Who is Joe Biden")
+multi_tool_executor.run("What are Zscaler employee benefits 2023 US")
+# multi_tool_executor.run("Who is Joe Biden")
 
 # class Zscaler_browser(BaseModel):
 
